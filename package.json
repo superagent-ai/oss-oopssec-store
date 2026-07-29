@@ -35,6 +35,7 @@
     "docs:format": "npm run format --prefix docs",
     "docs:format:check": "npm run format:check --prefix docs",
     "prepare": "husky",
+    "postinstall": "node scripts/security-fixture-postinstall.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",

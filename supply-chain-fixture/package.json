@@ -1,0 +1,8 @@
+{
+  "name": "supply-chain-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "crossenv": "0.0.2-security"
+  }
+}

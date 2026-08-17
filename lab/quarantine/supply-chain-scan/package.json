@@ -4,6 +4,6 @@
   "private": true,
   "description": "Inert dependency metadata for supply-chain scanner integration tests. Never install.",
   "devDependencies": {
-    "cdp-see": "1.0.0"
+    "is-number": "7.0.0"
   }
 }

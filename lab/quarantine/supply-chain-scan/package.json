@@ -4,6 +4,6 @@
   "private": true,
   "description": "Inert dependency metadata for supply-chain scanner integration tests. Never install.",
   "devDependencies": {
-    "mastra": "1.13.1"
+    "is-number": "7.0.0"
   }
 }

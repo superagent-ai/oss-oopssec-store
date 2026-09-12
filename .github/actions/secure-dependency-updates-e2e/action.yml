@@ -1,0 +1,9 @@
+name: Secure dependency updates E2E
+description: Exercises scoped action pinning
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22

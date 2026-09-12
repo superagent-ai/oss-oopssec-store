@@ -3,4 +3,12 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/e2e-fixture-a"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/e2e-fixture-b"
+    schedule:
+      interval: "daily"

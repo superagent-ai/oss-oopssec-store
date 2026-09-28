@@ -1,0 +1,2 @@
+Demo fixture for reviewing PR security check progress.
+This text is inert and is not used by the application.

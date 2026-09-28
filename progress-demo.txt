@@ -1,0 +1,2 @@
+Scan progress demo v4: observe changing in-progress GitHub check labels.
+This fixture is inert and does not change application behavior.

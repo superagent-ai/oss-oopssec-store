@@ -1,0 +1,2 @@
+New demo PR for Superagent PR security check progress after conflict resolution.
+This fixture does not change application behavior.

@@ -1,0 +1,3 @@
+# Demo-only pinned dependencies to show supply-chain check progress.
+requests==2.32.3
+idna==3.10

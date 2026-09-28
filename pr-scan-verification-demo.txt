@@ -1,0 +1,3 @@
+PR-scan verification demo - 2026-09-28
+This is an non-executable test fixture for the SUperagent Security Scan.
+No application behavior or dependencies are changed.

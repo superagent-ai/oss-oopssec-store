@@ -1,0 +1,2 @@
+Scan progress demo after review fixes: observe PR security check labels.
+This fixture does not affect application behavior.

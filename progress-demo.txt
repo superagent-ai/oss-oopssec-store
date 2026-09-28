@@ -1,0 +1,2 @@
+Scan progress demo v6: verify in-progress check labels with the Luna model after dev server restart.
+This fixture is inert and does not change application behavior.

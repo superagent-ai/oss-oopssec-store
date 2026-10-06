@@ -1,1 +1,8 @@
-{"name":"scan-policy-smoke-test","version":"1.0.0","private":true,"dependencies":{"is-number":"7.0.0"}}
+{
+  "name": "scan-policy-smoke-test",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "is-number": "7.0.0"
+  }
+}

@@ -1,1 +1,1 @@
-{"name":"scan-policy-regression-smoke","version":"1.0.0","private":true,"dependencies":{"is-number":"7.0.0"}}
+{"name":"scan-policy-regression-smoke","version":"1.0.0","private":true,"description":"Follow-up head to verify capped scan admission","dependencies":{"is-number":"7.0.0"}}

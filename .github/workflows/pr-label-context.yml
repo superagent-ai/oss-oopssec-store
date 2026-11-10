@@ -1,0 +1,24 @@
+name: PR label context
+
+on:
+  pull_request_target:
+    types: [opened, edited, reopened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  label-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish label context
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const title = '${{ github.event.pull_request.title }}';
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.issue.number,
+              body: `Review context: ${title}`,
+            });

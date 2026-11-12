@@ -7,6 +7,12 @@ root Next.js dependency, proposing `15.2.2` to `15.2.3` for
 It runs only on manual dispatch from `main`, defaults to a dry run, and never
 merges the resulting PR automatically.
 
+The test pins npm `11.19.0` for lockfile generation to avoid
+[npm 12's bundled-package tarball bug](https://github.com/npm/cli/issues/9800),
+which can leave `package-lock.json` unchanged while updating `package.json`.
+Rerunning the workflow updates the existing test PR and rebases it when `main`
+changes.
+
 This repository is a fork. The configuration explicitly enables processing it;
 Renovate creates update branches and PRs inside `superagent-ai/oss-oopssec-store`,
 not in its upstream repository.

@@ -1,0 +1,38 @@
+module.exports = {
+  platform: "github",
+  repositories: ["superagent-ai/oss-oopssec-store"],
+  autodiscover: false,
+  forkProcessing: "enabled",
+  onboarding: false,
+  requireConfig: "ignored",
+  dryRun: process.env.VALIDATION_DRY_RUN === "false" ? null : "full",
+  allowScripts: false,
+  enabledManagers: ["npm"],
+  includePaths: ["package.json", "package-lock.json"],
+  dependencyDashboard: { enabled: false },
+  automerge: false,
+  branchPrefix: "renovate/manual-validation/",
+  branchConcurrentLimit: 1,
+  prConcurrentLimit: 1,
+  prHourlyLimit: 1,
+  labels: ["dependencies"],
+  vulnerabilityAlerts: { enabled: false },
+  lockFileMaintenance: { enabled: false },
+  packageRules: [
+    {
+      matchPackageNames: ["*"],
+      enabled: false,
+    },
+    {
+      matchFileNames: ["package.json"],
+      matchPackageNames: ["next"],
+      enabled: true,
+      allowedVersions: "15.2.3",
+      rangeStrategy: "pin",
+    },
+  ],
+  prBodyNotes: [
+    "Manual custom-account test for Superagent Dependency Validation: Next.js 15.2.2 to 15.2.3 addresses CVE-2025-29927 (GHSA-f82v-jwr5-mffw).",
+    "Keep this PR open for assessment; merging changes the intentionally vulnerable middleware-bypass fixture.",
+  ],
+};

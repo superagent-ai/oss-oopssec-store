@@ -21,7 +21,7 @@ RUN DATABASE_URL=file:/tmp/build.db npm run build
 
 RUN rm -f /tmp/build.db
 
-RUN mkdir -p /app/data /app/uploads /app/documents/invoices /app/logs
+RUN mkdir -p /app/data /app/uploads /app/documents/invoices /app/logs /app/tmp
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1

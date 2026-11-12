@@ -1,0 +1,2 @@
+# Isolated package-intelligence fixture; not installed by the application.
+requests==2.32.5

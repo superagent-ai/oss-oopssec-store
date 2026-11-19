@@ -1,0 +1,10 @@
+[Unit]
+Description=Nightly volume backups
+
+[Service]
+User=root
+ExecStart=/usr/bin/ruby /opt/backup-agent/daemon.rb
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

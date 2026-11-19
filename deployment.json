@@ -1,0 +1,9 @@
+{
+  "runtime": { "ruby": "3.2", "tar": "GNU tar 1.35" },
+  "settings": {
+    "central_prefix": "volumes/volume-1/",
+    "replica": "/var/lib/backup-settings/volumes.json",
+    "writer_role": "volume-settings-service",
+    "writer_authority": "May set arbitrary string values under this prefix. Cannot execute host commands, access root credentials, modify the agent, or change volume identifiers."
+  }
+}

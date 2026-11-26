@@ -1,0 +1,20 @@
+name: PR branch label preview
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  label-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Preview branch label
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Labeling branch ${{ github.event.pull_request.head.ref }}"
+          gh pr edit "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" --add-label "preview"
